@@ -10,11 +10,7 @@ model = load_model()
 @app.get("/")
 def read_root():
     return {
-        """
-        message": "Welcome to my first API based on model requests!
-        Besos
-        Fatima-Ezzahra
-        """
+        "message": "Welcome to my first API based on model requests! \n Besos \n Fatima-Ezzahra"
     }
 
 
