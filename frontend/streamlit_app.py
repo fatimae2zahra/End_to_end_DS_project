@@ -11,11 +11,9 @@ load_dotenv(find_dotenv())
 
 # Define the base URL of your FastAPI backend
 BASE_URL = os.environ["BASE_URL_PROD"]
-print(f"Current directory {os.getcwd()}")
-print(f"List directories {os.listdir()}")
 root_path = "../"
-data_path = os.path.join(root_path, "data/raw_data/")
-
+# data_path = os.path.join(root_path, "data/raw_data/")
+data_path = './data/raw_data/'
 
 @st.cache_data
 def load_data(path):
