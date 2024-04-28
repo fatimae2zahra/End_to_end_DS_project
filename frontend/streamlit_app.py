@@ -11,7 +11,7 @@ load_dotenv(find_dotenv())
 
 # Define the base URL of your FastAPI backend
 BASE_URL = os.environ["BASE_URL_PROD"]
-
+print(f"Current directory "{os.getcwd()}")
 root_path = "../"
 data_path = os.path.join(root_path, "data/raw_data/")
 
